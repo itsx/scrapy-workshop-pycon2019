@@ -1,0 +1,26 @@
+version: '3'
+
+networks:
+  prometheus:
+
+services:
+  prometheus:
+    build:
+      context: prom/prometheus
+    #image: prom/prometheus
+    volumes:
+    - ./prom/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+    - "9090:9090"
+    networks:
+    - prometheus
+
+  scrapyd:
+    build:
+      context: scrapyd
+    ports:
+    - "6800:6800"
+    - "6080:6080"   # prometheus metrics endpoint  
+    #entrypoint: /scrapyd/entrypoint.sh
+    networks:
+    - prometheus
