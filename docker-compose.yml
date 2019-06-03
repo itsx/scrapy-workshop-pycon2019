@@ -1,26 +1,13 @@
 version: '3'
 
 networks:
-  prometheus:
+  scrapynet:
 
 services:
-  prometheus:
-    build:
-      context: prom/prometheus
-    #image: prom/prometheus
-    volumes:
-    - ./prom/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
-    ports:
-    - "9090:9090"
-    networks:
-    - prometheus
-
   scrapyd:
     build:
       context: scrapyd
     ports:
-    - "6800:6800"
-    - "6080:6080"   # prometheus metrics endpoint  
-    #entrypoint: /scrapyd/entrypoint.sh
+    - "6801:6801"
     networks:
-    - prometheus
+    - scrapynet
