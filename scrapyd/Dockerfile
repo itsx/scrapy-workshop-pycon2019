@@ -19,6 +19,9 @@ RUN apt-get update -q \
     libwebp5 \
     python \
     python-dev \
+    vim \
+    nano \
+    tree \
     zlib1g \
  && curl -sSL https://bootstrap.pypa.io/get-pip.py | python \
  && pip install --no-cache-dir \
