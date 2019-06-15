@@ -7,7 +7,10 @@ services:
   scrapyd:
     build:
       context: scrapyd
+    volumes:
+    - ./projects:/projects
     ports:
     - "6801:6801"
     networks:
     - scrapynet
+    container_name: scrapy
