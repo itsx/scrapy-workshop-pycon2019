@@ -1,5 +1,7 @@
 # scrapy-workshop-pycon2019
-pycon 2019 scrapy workshop
+Pycon.cz 2019 scrapy workshop
+
+:hamster: :frog: This workshop should learn basic work with a [Scrapy](https://scrapy.org/community/) framework.
 
 ---
 
