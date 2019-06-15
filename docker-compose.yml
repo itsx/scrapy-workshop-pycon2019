@@ -6,7 +6,7 @@ networks:
 services:
   scrapyd:
     build:
-      context: scrapyd
+      context: scrapy
     volumes:
     - ./projects:/projects
     ports:
