@@ -23,10 +23,10 @@ installed on a top of Ubuntu OS, to prevent possible problems with direct Scrapy
 
 
 ### Installation of Scrapy directly to a operation system (Alternative)
-[Scrapy installation guide](http://docs.scrapy.org/en/latest/intro/install.html) For a brave one, who wants to try 
+[Scrapy installation guide](http://docs.scrapy.org/en/latest/intro/install.html) - For a brave one, who wants to try 
 installation directly to a OS. There are some python libraries, which themselves depend on non-Python packages that might require additional installation steps depending on your platform.
 
-
+[Scrapy installation quide - Windows](http://docs.scrapy.org/en/latest/intro/install.html#platform-specific-installation-notes) - In a case you are not able to run docker on your Windows, install Scrapy directly.
 ## Setup
 
 1. Clone this repository. From your console.
