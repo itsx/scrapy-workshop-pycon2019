@@ -1,17 +1,12 @@
-docker
 future
-geocoder
-influxdb
 pdfminer; python_version == '2.*'
 pdfminer.six; python_version == '3.*'
-Pillow
 pymongo[tls]
 Scrapy
 scrapy-fake-useragent
 scrapy-rotating-proxies
 scrapy-splash
 selenium
-git+https://github.com/mozilla/unicode-slugify.git
 validators
 w3lib
 urllib3>=1.21.1,<1.25
