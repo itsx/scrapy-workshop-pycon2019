@@ -1,7 +1,5 @@
 FROM ubuntu:16.04
 
-COPY ./entrypoint.sh /tmp/entrypoint.sh
-#COPY ./create_proxy_list.py /usr/local/bin/create_proxy_list.py
 COPY ./requirements.txt /tmp/requirements.txt
 
 RUN apt-get update -q \
@@ -42,7 +40,5 @@ COPY ./scrapyd.conf /etc/scrapyd/
 VOLUME /etc/scrapyd /var/lib/scrapyd
 EXPOSE 6800
 EXPOSE 6080
-
-ENTRYPOINT ["/tmp/entrypoint.sh"]
 
 CMD ["scrapyd", "--logfile=/var/log/scrapyd.log", "--pidfile="]
