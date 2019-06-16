@@ -5,6 +5,11 @@ Pycon.cz 2019 scrapy workshop
 
 ---
 
+## Contact
+
+   tomas.bartek3@gmail.com
+
+---  
 ## Prerequisites
 ### Git
 [Git](https://git-scm.com/) is a version control software that records changes
