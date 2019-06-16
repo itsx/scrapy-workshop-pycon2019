@@ -8,4 +8,11 @@ class ToscrapeXpathSpider(scrapy.Spider):
     start_urls = ['http://quotes.toscrape.com/']
 
     def parse(self, response):
+        for quote in response.xpath("//div[@class='quote']"):
+            yield {
+                'test': quote.xpath("/span[@class='text']/text()").extract(),
+                'author': '',
+                'tags': '',
+            }
+            #  /span[@class='text']/text()").extract()
         pass
