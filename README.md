@@ -17,6 +17,9 @@ Pycon.cz 2019 scrapy workshop
     - [scrapinghub organisation Github](https://github.com/scrapinghub) - many extremely useful projects, which extends
       scrapy in some way: Spidermon (monitoring), Splash (javascript engine), etc.
     - [scrapinghub blog](https://blog.scrapinghub.com/) - actualities, examples, best-prectices, etc.
+   - XPath  
+     - [XPath tutorial](http://www.zvon.org/comp/r/tut-XPath_1.html#Pages~List_of_XPaths)  
+     - [XPath concise](http://plasmasturm.org/log/xpath101/)
 
 ---  
 ## Prerequisites
