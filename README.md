@@ -8,6 +8,15 @@ Pycon.cz 2019 scrapy workshop
 ## Contact
 
    tomas.bartek3@gmail.com
+   
+## Resources
+
+  - Scrapy  
+    - [scrapy official documentation](https://docs.scrapy.org/en/latest/) - good to read all :)
+    - [scrapinghub sample projects Github](https://github.com/scrapinghub/sample-projects) - :exclamation: spider and test web scraped during this workshop is one of the sample projects from this repo
+    - [scrapinghub organisation Github](https://github.com/scrapinghub) - many extremely useful projects, which extends
+      scrapy in some way: Spidermon (monitoring), Splash (javascript engine), etc.
+    - [scrapinghub blog](https://blog.scrapinghub.com/) - actualities, examples, best-prectices, etc.
 
 ---  
 ## Prerequisites
