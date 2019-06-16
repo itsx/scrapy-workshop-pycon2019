@@ -12,7 +12,9 @@ class ToscrapeXpathSpider(scrapy.Spider):
             yield {
                 'text': quote.xpath('./span[@class="text"]/text()').extract_first(),
                 'author': quote.xpath('.//small[@class="author"]/text()').extract_first(),
-                'tags': '',
+                'tags': quote.xpath('.//div[@class="tags"]/a[@class="tag"]/text()').extract(),
             }
-            #  /span[@class='text']/text()").extract()
-        pass
+
+        next_page_url = response.xpath('//li[@class="next"]/a/@href').extract_first()
+        if next_page_url is not None:
+            yield scrapy.Request(response.urljoin(next_page_url))
